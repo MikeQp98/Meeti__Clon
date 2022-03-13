@@ -1,0 +1,36 @@
+@use '../base/variables' as v; 
+@use '../base/mixins' as m; 
+
+.derecha {
+
+    @include m.tablet {
+        margin-right: 2rem;
+    }
+
+    &__imagen { 
+        margin-top: 4rem;
+    }
+
+    &__informacion {
+        background-color: v.$secundario;
+        
+    }
+
+    &__titulo {
+        color: v.$blanco;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    &__informaciones {
+       text-align: center;
+       color: v.$blanco;
+       padding: 1rem;
+       font-weight: 400;
+
+       &__fecha{
+           font-size: 4rem;
+       }
+    }
+
+}
